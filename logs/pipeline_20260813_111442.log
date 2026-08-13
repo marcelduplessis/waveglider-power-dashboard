@@ -1,0 +1,61 @@
+2026-08-13 11:14:42,556 [INFO] ================================================================================
+2026-08-13 11:14:42,557 [INFO] WAVEGLIDER POWER ANALYSIS PIPELINE START
+2026-08-13 11:14:42,557 [INFO] Base directory: /Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard
+2026-08-13 11:14:42,557 [INFO] ================================================================================
+2026-08-13 11:14:42,557 [INFO] Starting: waveglider-data-wg1169.sh
+2026-08-13 11:14:42,557 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh
+2026-08-13 11:15:07,595 [INFO] Output:
+--- Processing data for 2026-08-12 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-12.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-12.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-12.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-12.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-12.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-12.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-12.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-12.json
+--- Processing data for 2026-08-13 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-13.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-13.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-13.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-13.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-13.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-13.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-13.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-13.json
+All daily processing is complete.
+
+2026-08-13 11:15:07,595 [INFO] Completed: waveglider-data-wg1169.sh
+2026-08-13 11:15:07,595 [INFO] Starting: waveglider-data-wg1170.sh
+2026-08-13 11:15:07,595 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1170.sh
+2026-08-13 11:15:29,203 [INFO] Output:
+--- Processing data for 2026-08-12 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-adcp_2026-08-12.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps_2026-08-12.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-telemetry_2026-08-12.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-waves_2026-08-12.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-weather_2026-08-12.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-raw-data-report_2026-08-12.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-output-power-status_2026-08-12.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-solar_2026-08-12.json
+--- Processing data for 2026-08-13 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-adcp_2026-08-13.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps_2026-08-13.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-telemetry_2026-08-13.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-waves_2026-08-13.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-weather_2026-08-13.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-raw-data-report_2026-08-13.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-output-power-status_2026-08-13.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-solar_2026-08-13.json
+All daily processing is complete.
+
+2026-08-13 11:15:29,203 [INFO] Completed: waveglider-data-wg1170.sh
+2026-08-13 11:15:29,203 [INFO] Starting: extract_amps_ports_full_wg1169.py
+2026-08-13 11:15:29,203 [INFO] Command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/extract_amps_ports_full_wg1169.py
+2026-08-13 11:15:29,275 [WARNING] Stderr:
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/extract_amps_ports_full_wg1169.py", line 29, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+2026-08-13 11:15:29,275 [ERROR] Failed: extract_amps_ports_full_wg1169.py (exit code: 1)

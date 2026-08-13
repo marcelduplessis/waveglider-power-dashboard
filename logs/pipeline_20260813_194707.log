@@ -1,0 +1,41 @@
+2026-08-13 19:47:07,213 [INFO] ================================================================================
+2026-08-13 19:47:07,214 [INFO] WAVEGLIDER POWER ANALYSIS PIPELINE START
+2026-08-13 19:47:07,214 [INFO] Base directory: /Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard
+2026-08-13 19:47:07,214 [INFO] ================================================================================
+2026-08-13 19:47:07,214 [INFO] Starting: waveglider-data-wg1169.sh
+2026-08-13 19:47:07,214 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh
+2026-08-13 19:47:20,211 [INFO] Output:
+--- Processing data for 2026-08-12 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-12.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-12.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-12.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-12.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-12.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-12.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-12.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-12.json
+--- Processing data for 2026-08-13 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-13.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-13.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-13.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-13.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-13.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-13.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-13.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-13.json
+
+2026-08-13 19:47:20,211 [WARNING] Stderr:
+/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh: line 75: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-13.json: Resource deadlock avoided
+  ERROR: waveglider-waves.py failed for 2026-08-13
+/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh: line 75: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-13.json: Resource deadlock avoided
+  ERROR: waveglider-weather.py failed for 2026-08-13
+/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh: line 75: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-13.json: Resource deadlock avoided
+  ERROR: waveglider-raw-data-report.py failed for 2026-08-13
+/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh: line 75: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-13.json: Resource deadlock avoided
+  ERROR: waveglider-amps-output-power-status.py failed for 2026-08-13
+/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh: line 75: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-13.json: Resource deadlock avoided
+  ERROR: waveglider-amps-solar.py failed for 2026-08-13
+Finished with one or more errors. Review messages above.
+
+2026-08-13 19:47:20,211 [ERROR] Failed: waveglider-data-wg1169.sh (exit code: 1)
+2026-08-13 19:47:20,211 [ERROR] Data fetch for WG1169 failed

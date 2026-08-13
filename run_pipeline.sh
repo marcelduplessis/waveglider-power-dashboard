@@ -27,7 +27,7 @@ echo "Working directory: $SCRIPT_DIR"
 echo ""
 
 # Run the Python orchestration script
-python3 "$SCRIPT_DIR/run_full_pipeline.py"
+/opt/anaconda3/bin/python3 "$SCRIPT_DIR/run_full_pipeline.py"
 exit_code=$?
 
 if [ $exit_code -eq 0 ]; then

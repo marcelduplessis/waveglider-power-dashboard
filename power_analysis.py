@@ -10,10 +10,12 @@ Generates interactive Plotly dashboards for waveglider power analysis with:
   - Dynamic return-to-origin button for PG Obs integration
 """
 
+from datetime import datetime, timezone
+from pathlib import Path
+
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from pathlib import Path
 
 
 def main():
@@ -53,7 +55,8 @@ def main():
     
     # Fallback destination if browser history is not available.
     PG_OBS_FALLBACK_URL = 'https://obs.polargliders.com/'
-    
+    LAST_UPDATED = datetime.now(timezone.utc).strftime('%d-%b %Y %H:%M:%S UTC')
+
     # ========== Helper Functions ==========
     
     def load_glider_data(glider_key: str):
@@ -439,8 +442,8 @@ def main():
 <body>
   <div class="wrap">
     <h1>Wave Glider Power Dashboard</h1>
-    <p>Interactive daily power summaries for: {selected_labels}.</p>
-    <p>Times are in UTC.</p>
+    <p>Interactive daily power summaries for Polar Gliders' Wave Gliders: {selected_labels}.</p>
+    <p>Times are in Coordinated Universal Time (UTC). Last updated: {LAST_UPDATED}</p>
     <a id="returnToPgObs" class="return-btn" href="{PG_OBS_FALLBACK_URL}">Return To PG Obs Page</a>
 
     {panels_html}

@@ -228,7 +228,7 @@ def build_total_battery_power(summary_amps: pd.DataFrame) -> pd.DataFrame:
 
 
 def main():
-    data_dir = Path("/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/wg1169")
+    data_dir = Path("/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/")
     output_files = sorted(data_dir.glob("waveglider-amps-output-power-status_*.json"))
     solar_files = sorted(data_dir.glob("waveglider-amps-solar_*.json"))
     summary_files = sorted(data_dir.glob("waveglider-amps_*.json"))
@@ -256,7 +256,7 @@ def main():
     print(f"Total rows: {len(full_table)}")
     print(full_table.head(20).to_string(index=False))
 
-    out_dir = Path("/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/power-analysis/amps_power_output/wg1169/")
+    out_dir = Path("/Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/")
     out_dir.mkdir(exist_ok=True)
     full_out_path = out_dir / "all_ports_domain_slot_port_power.csv"
     total_out_path = out_dir / "total_output_power_watts.csv"

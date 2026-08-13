@@ -1,0 +1,111 @@
+2026-08-13 09:06:28,457 [INFO] ================================================================================
+2026-08-13 09:06:28,457 [INFO] WAVEGLIDER POWER ANALYSIS PIPELINE START
+2026-08-13 09:06:28,457 [INFO] Base directory: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/power-analysis
+2026-08-13 09:06:28,457 [INFO] ================================================================================
+2026-08-13 09:06:28,458 [INFO] Starting: waveglider-data-wg1169.sh
+2026-08-13 09:06:28,458 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh
+2026-08-13 09:06:30,617 [INFO] Output:
+--- Processing data for 2026-08-12 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-adcp_2026-08-12.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps_2026-08-12.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-telemetry_2026-08-12.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-waves_2026-08-12.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-weather_2026-08-12.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-raw-data-report_2026-08-12.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps-output-power-status_2026-08-12.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps-solar_2026-08-12.json
+--- Processing data for 2026-08-13 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-adcp_2026-08-13.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps_2026-08-13.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-telemetry_2026-08-13.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-waves_2026-08-13.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-weather_2026-08-13.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-raw-data-report_2026-08-13.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps-output-power-status_2026-08-13.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Desktop/whirls/data/wavegliders/wg1169/waveglider-amps-solar_2026-08-13.json
+
+2026-08-13 09:06:30,617 [WARNING] Stderr:
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-adcp.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-adcp.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-telemetry.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-telemetry.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-waves.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-waves.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-weather.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-weather.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-raw-data-report.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-raw-data-report.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps-output-power-status.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps-output-power-status.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps-solar.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps-solar.py failed for 2026-08-12
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-adcp.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-adcp.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-telemetry.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-telemetry.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-waves.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-waves.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-weather.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-weather.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-raw-data-report.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-raw-data-report.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps-output-power-status.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps-output-power-status.py failed for 2026-08-13
+Traceback (most recent call last):
+  File "/Users/xduplm/Library/CloudStorage/GoogleDrive-marceldpl10@gmail.com/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-amps-solar.py", line 22, in <module>
+    from zeep import Client, helpers
+ModuleNotFoundError: No module named 'zeep'
+  ERROR: waveglider-amps-solar.py failed for 2026-08-13
+Finished with one or more errors. Review messages above.
+
+2026-08-13 09:06:30,617 [ERROR] Failed: waveglider-data-wg1169.sh (exit code: 1)
+2026-08-13 09:06:30,617 [ERROR] Data fetch for WG1169 failed

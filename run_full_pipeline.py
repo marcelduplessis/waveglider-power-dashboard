@@ -4,14 +4,16 @@ run_full_pipeline.py
 
 Orchestrates the complete waveglider power analysis pipeline:
 1. waveglider-data-wg1169.sh & waveglider-data-wg1170.sh (fetch new data from WGMS)
-2. extract_amps_ports_full_wg1169.py & extract_amps_ports_full_wg1170.py (extract AMPS data)
-3. power_analysis.py (generate interactive dashboards)
-4. Deploy dashboard to remote server via rsync
+2. Extract AirSea and VeGAS data for both vehicles, then decode AirSea data
+3. export_wg1169_csv.py & export_wg1170_csv.py (export dashboard CSV files)
+4. extract_amps_ports_full_wg1169.py & extract_amps_ports_full_wg1170.py (extract AMPS data)
+5. power_analysis.py (generate interactive dashboards)
+6. Deploy dashboard to remote server via rsync
 
 Exit code:
   0 = all steps successful
   1 = data fetch failed
-  2 = extract AMPS failed
+    2 = data processing, CSV export, or AMPS extraction failed
   3 = power analysis failed
   
 Note: Deployment failures do not cause pipeline failure (logged as warning).
@@ -110,8 +112,74 @@ def main():
     ):
         logger.error("Data fetch for WG1170 failed")
         return 1
+
+    # Step 2: Extract AirSea and VeGAS data, then decode AirSea data
+    wg1169_data_dir = data_service_dir.parents[2] / 'data' / 'wg1169' / 'json'
+    wg1170_data_dir = data_service_dir.parents[2] / 'data' / 'wg1170' / 'json'
+    data_processing_scripts = [
+        (
+            data_service_dir / 'extract_airsea_wg1169.py',
+            [str(wg1169_data_dir), str(wg1169_data_dir / 'AirSeaWHIRLS.csv')],
+            "extract_airsea_wg1169.py for WG1169",
+        ),
+        (
+            data_service_dir / 'extract_airsea_wg1170.py',
+            [str(wg1170_data_dir), str(wg1170_data_dir / 'AirSeaWHIRLS.csv')],
+            "extract_airsea_wg1170.py for WG1170",
+        ),
+        (
+            data_service_dir / 'extract_vegas.py',
+            [str(wg1170_data_dir), str(wg1170_data_dir / 'VeGAS_decoded.csv')],
+            "extract_vegas.py for WG1170",
+        ),
+        (
+            data_service_dir / 'decodeAirSea_wg1169.py',
+            [
+                str(wg1169_data_dir / 'AirSeaWHIRLS.csv'),
+                str(wg1169_data_dir / 'AirSeaWHIRLS_Decoded.csv'),
+            ],
+            "decodeAirSea_wg1169.py for WG1169",
+        ),
+        (
+            data_service_dir / 'decodeAirSea_wg1170.py',
+            [
+                str(wg1170_data_dir / 'AirSeaWHIRLS.csv'),
+                str(wg1170_data_dir / 'AirSeaWHIRLS_Decoded.csv'),
+            ],
+            "decodeAirSea_wg1170.py for WG1170",
+        ),
+    ]
+
+    for script, arguments, description in data_processing_scripts:
+        if not script.exists():
+            logger.error(f"Required data processing script not found: {script}")
+            return 2
+        if not run_command(
+            [sys.executable, str(script), *arguments],
+            description,
+            working_dir=str(data_service_dir)
+        ):
+            logger.error(f"Data processing failed: {description}")
+            return 2
+
+    # Step 3: Export dashboard CSV files
+    export_scripts = [
+        BASE_DIR / 'export_wg1169_csv.py',
+        BASE_DIR / 'export_wg1170_csv.py',
+    ]
+
+    for script in export_scripts:
+        if not script.exists():
+            logger.error(f"Required CSV export script not found: {script}")
+            return 2
+        if not run_command(
+            [sys.executable, str(script)],
+            script.name,
+        ):
+            logger.error(f"CSV export failed: {script.name}")
+            return 2
     
-    # Step 2: Extract AMPS data
+    # Step 4: Extract AMPS data
     extract_wg1169 = BASE_DIR / 'extract_amps_ports_full_wg1169.py'
     extract_wg1170 = BASE_DIR / 'extract_amps_ports_full_wg1170.py'
     
@@ -135,7 +203,7 @@ def main():
     ):
         return 2
     
-    # Step 3: Run power analysis
+    # Step 5: Run power analysis
     power_analysis_script = BASE_DIR / 'power_analysis.py'
     
     if not power_analysis_script.exists():
@@ -149,7 +217,7 @@ def main():
     ):
         return 3
     
-    # Step 4: Deploy dashboard to remote server
+    # Step 6: Deploy dashboard to remote server
     deploy_file = BASE_DIR / 'exports' / 'wg_power_dashboard.html'
     if deploy_file.exists():
         if not run_command(

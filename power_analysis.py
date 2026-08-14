@@ -4,7 +4,8 @@ power_analysis.py
 
 Standalone script version of power_analysis.ipynb.
 Generates interactive Plotly dashboards for waveglider power analysis with:
-  - 3 stacked subplots (Power Sources/Flows, Total Battery Power, Full Mission Battery)
+    - 4 stacked subplots (Power Sources/Flows, Total Battery Power,
+        Full Mission Battery, Sensor Data Availability)
   - Day slider for temporal navigation
   - Per-glider and combined HTML exports
   - Dynamic return-to-origin button for PG Obs integration
@@ -66,11 +67,55 @@ def main():
         solar_pwr_in = pd.read_csv(glider_dir / 'solar_power_watts.csv')
         total_pwr_out = pd.read_csv(glider_dir / 'total_output_power_watts.csv')
         battery_pwr = pd.read_csv(glider_dir / 'total_battery_power_watts.csv')
-        return sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr
+        sensor_data = {
+            'airsea': pd.read_csv(glider_dir / 'airsea.csv'),
+            'waves': pd.read_csv(glider_dir / 'waves.csv'),
+            'weather': pd.read_csv(glider_dir / 'weather.csv'),
+        }
+        if glider_key == 'wg1170':
+            sensor_data['vegas'] = pd.read_csv(glider_dir / 'vegas.csv')
+        return sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr, sensor_data
+
+
+    def build_sensor_availability(sensor_data, include_pco2=False):
+        """Build timestamp/sensor rows where the requested measurement is valid."""
+        sensor_specs = [
+            ('GPSWaves', 'waves', 'timeStamp', 'significant_wave_height_m', False),
+            ('SPN1', 'airsea', 'Logger_DateTime', 'SPN1_Raw_Total_Avg', False),
+            ('RBR CTD', 'airsea', 'Logger_DateTime', 'RBR_Temp_Avg', False),
+            ('Vaisala', 'airsea', 'Logger_DateTime', 'wind_speed_Max', False),
+            ('Gill R3-50', 'airsea', 'Logger_DateTime', 'Ux_gill_Avg', False),
+            ('Airmar WS200', 'weather', 'timeStamp', 'wind_speed_kt', False),
+        ]
+        if include_pco2:
+            sensor_specs.append(
+                ('pCO2', 'vegas', 'sensor_time', 'Ocean CO2 Ave', True)
+            )
+
+        availability = []
+        for sensor, source, time_column, value_column, dayfirst in sensor_specs:
+            dataframe = sensor_data[source]
+            values = pd.to_numeric(dataframe[value_column], errors='coerce')
+            valid_values = values.notna()
+            timestamps = pd.to_datetime(
+                dataframe.loc[valid_values, time_column],
+                errors='coerce',
+                dayfirst=dayfirst,
+            )
+            valid_rows = pd.DataFrame({
+                'timestamp': timestamps,
+                'value': values.loc[valid_values],
+            }).dropna(subset=['timestamp'])
+            valid_rows['sensor'] = sensor
+            availability.append(
+                valid_rows[['timestamp', 'sensor', 'value']]
+            )
+
+        return pd.concat(availability, ignore_index=True).sort_values('timestamp')
     
     
-    def build_power_figure(sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr, glider_label, threshold_w=0.2):
-        """Build the 3-subplot interactive power analysis figure with day slider."""
+    def build_power_figure(sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr, sensor_availability, glider_label, threshold_w=0.2):
+        """Build the 4-subplot interactive power analysis figure with day slider."""
         plot_df = sensor_pwr_out.copy()
         plot_df['sampleHour'] = pd.to_datetime(plot_df['sampleHour'])
         plot_df = plot_df[plot_df['avg_power_W'] > threshold_w].copy()
@@ -135,15 +180,16 @@ def main():
         default_day = today if today in available_days else available_days[-1]
 
         fig = make_subplots(
-            rows=3,
+            rows=4,
             cols=1,
             shared_xaxes=False,
-            vertical_spacing=0.09,
-            row_heights=[0.5, 0.23, 0.27],
+            vertical_spacing=0.07,
+            row_heights=[0.39, 0.18, 0.23, 0.2],
             subplot_titles=(
                 'Power Sources and Flows',
                 'Total Battery Power',
                 'Full Mission Battery Power (selected day shaded)',
+                'Sensor Data Availability',
             ),
         )
 
@@ -161,6 +207,26 @@ def main():
             col=1,
         )
         mission_trace_idx = len(fig.data) - 1
+
+        fig.add_trace(
+            go.Scatter(
+                x=sensor_availability['timestamp'],
+                y=sensor_availability['sensor'],
+                customdata=sensor_availability['value'],
+                mode='markers',
+                name='Sensor data available',
+                marker=dict(color='#009E73', symbol='square', size=6),
+                visible=True,
+                hovertemplate=(
+                    '%{x|%Y-%m-%d %H:%M}<br>'
+                    '%{y}: data available<br>'
+                    'Value: %{customdata:.3f}<extra></extra>'
+                ),
+            ),
+            row=4,
+            col=1,
+        )
+        availability_trace_idx = len(fig.data) - 1
 
         day_meta = {}
 
@@ -286,6 +352,7 @@ def main():
             meta = day_meta[day_label]
             visible = [False] * len(fig.data)
             visible[mission_trace_idx] = True
+            visible[availability_trace_idx] = True
             for idx in meta['trace_indices']:
                 visible[idx] = True
 
@@ -313,7 +380,7 @@ def main():
             legend_title='Series',
             hovermode='x unified',
             template='plotly_white',
-            height=1080,
+            height=1380,
             margin=dict(l=60, r=130, t=130, b=190),
             sliders=[
                 dict(
@@ -334,11 +401,21 @@ def main():
         fig.update_xaxes(tickformat=top_middle_time_format, tickangle=0, showticklabels=True, automargin=True, row=1, col=1)
         fig.update_xaxes(matches='x', row=2, col=1)
         fig.update_xaxes(tickformat=top_middle_time_format, tickangle=0, showticklabels=True, automargin=True, row=2, col=1)
-        fig.update_xaxes(tickformat='%Y-%m-%d', tickangle=45, row=3, col=1)
+        fig.update_xaxes(showticklabels=False, row=3, col=1)
+        fig.update_xaxes(matches='x3', tickformat='%Y-%m-%d', tickangle=45, title_text='Time (UTC)', row=4, col=1)
 
         fig.update_yaxes(title_text='Power output (W)', row=1, col=1)
         fig.update_yaxes(title_text='Battery power (W)', row=2, col=1)
         fig.update_yaxes(title_text='Battery power (W)', row=3, col=1)
+        sensor_order = ['GPSWaves', 'SPN1', 'RBR CTD', 'Vaisala', 'Gill R3-50', 'Airmar WS200']
+        if 'pCO2' in sensor_availability['sensor'].values:
+            sensor_order.append('pCO2')
+        fig.update_yaxes(
+            categoryorder='array',
+            categoryarray=list(reversed(sensor_order)),
+            row=4,
+            col=1,
+        )
 
         return fig
 
@@ -375,8 +452,19 @@ def main():
     for glider_key in selected_glider_keys:
         glider_label = GLIDERS[glider_key]
         print(f"\nProcessing {glider_label}...")
-        sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr = load_glider_data(glider_key)
-        fig = build_power_figure(sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr, glider_label)
+        sensor_pwr_out, solar_pwr_in, total_pwr_out, battery_pwr, sensor_data = load_glider_data(glider_key)
+        sensor_availability = build_sensor_availability(
+            sensor_data,
+            include_pco2=(glider_key == 'wg1170'),
+        )
+        fig = build_power_figure(
+            sensor_pwr_out,
+            solar_pwr_in,
+            total_pwr_out,
+            battery_pwr,
+            sensor_availability,
+            glider_label,
+        )
         
         full_html, embed_html = export_glider_figure(fig, glider_key)
         figures[glider_key] = fig
@@ -437,6 +525,12 @@ def main():
     .return-btn:hover {{
       background: #f1f5f9;
     }}
+        .creator-credit {{
+            margin: 20px 0 4px;
+            color: #64748b;
+            font-size: 0.82rem;
+            text-align: center;
+        }}
   </style>
 </head>
 <body>
@@ -447,6 +541,7 @@ def main():
     <a id="returnToPgObs" class="return-btn" href="{PG_OBS_FALLBACK_URL}">Return To PG Obs Page</a>
 
     {panels_html}
+        <footer class="creator-credit">Created by Marcel du Plessis and Johan Edholm</footer>
   </div>
 
   <script>

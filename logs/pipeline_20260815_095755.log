@@ -1,0 +1,428 @@
+2026-08-15 09:57:55,381 [INFO] ================================================================================
+2026-08-15 09:57:55,381 [INFO] WAVEGLIDER POWER ANALYSIS PIPELINE START
+2026-08-15 09:57:55,381 [INFO] Base directory: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard
+2026-08-15 09:57:55,381 [INFO] ================================================================================
+2026-08-15 09:57:55,382 [INFO] Starting: waveglider-data-wg1169.sh
+2026-08-15 09:57:55,382 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1169.sh
+2026-08-15 09:58:20,930 [INFO] Output:
+--- Processing data for 2026-08-14 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-14.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-14.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-14.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-14.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-14.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-14.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-14.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-14.json
+--- Processing data for 2026-08-15 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-adcp_2026-08-15.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps_2026-08-15.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-telemetry_2026-08-15.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-waves_2026-08-15.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-weather_2026-08-15.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-raw-data-report_2026-08-15.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-output-power-status_2026-08-15.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/waveglider-amps-solar_2026-08-15.json
+All daily processing is complete.
+
+2026-08-15 09:58:20,931 [INFO] Completed: waveglider-data-wg1169.sh
+2026-08-15 09:58:20,931 [INFO] Starting: waveglider-data-wg1170.sh
+2026-08-15 09:58:20,931 [INFO] Command: bash /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/waveglider-data-wg1170.sh
+2026-08-15 09:58:44,006 [INFO] Output:
+--- Processing data for 2026-08-14 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-adcp_2026-08-14.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps_2026-08-14.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-telemetry_2026-08-14.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-waves_2026-08-14.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-weather_2026-08-14.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-raw-data-report_2026-08-14.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-output-power-status_2026-08-14.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-solar_2026-08-14.json
+--- Processing data for 2026-08-15 ---
+  Running waveglider-adcp.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-adcp_2026-08-15.json
+  Running waveglider-amps.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps_2026-08-15.json
+  Running waveglider-telemetry.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-telemetry_2026-08-15.json
+  Running waveglider-waves.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-waves_2026-08-15.json
+  Running waveglider-weather.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-weather_2026-08-15.json
+  Running waveglider-raw-data-report.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-raw-data-report_2026-08-15.json
+  Running waveglider-amps-output-power-status.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-output-power-status_2026-08-15.json
+  Running waveglider-amps-solar.py -> saving to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/waveglider-amps-solar_2026-08-15.json
+All daily processing is complete.
+
+2026-08-15 09:58:44,007 [INFO] Completed: waveglider-data-wg1170.sh
+2026-08-15 09:58:44,007 [INFO] Starting: extract_airsea_wg1169.py for WG1169
+2026-08-15 09:58:44,007 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/extract_airsea_wg1169.py /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/AirSeaWHIRLS.csv
+2026-08-15 09:58:44,516 [INFO] Output:
+Found 47 file(s):
+  waveglider-raw-data-report_2026-06-30.json
+  waveglider-raw-data-report_2026-07-01.json
+  waveglider-raw-data-report_2026-07-02.json
+  waveglider-raw-data-report_2026-07-03.json
+  waveglider-raw-data-report_2026-07-04.json
+  waveglider-raw-data-report_2026-07-05.json
+  waveglider-raw-data-report_2026-07-06.json
+  waveglider-raw-data-report_2026-07-07.json
+  waveglider-raw-data-report_2026-07-08.json
+  waveglider-raw-data-report_2026-07-09.json
+  waveglider-raw-data-report_2026-07-10.json
+  waveglider-raw-data-report_2026-07-11.json
+  waveglider-raw-data-report_2026-07-12.json
+  waveglider-raw-data-report_2026-07-13.json
+  waveglider-raw-data-report_2026-07-14.json
+  waveglider-raw-data-report_2026-07-15.json
+  waveglider-raw-data-report_2026-07-16.json
+  waveglider-raw-data-report_2026-07-17.json
+  waveglider-raw-data-report_2026-07-18.json
+  waveglider-raw-data-report_2026-07-19.json
+  waveglider-raw-data-report_2026-07-20.json
+  waveglider-raw-data-report_2026-07-21.json
+  waveglider-raw-data-report_2026-07-22.json
+  waveglider-raw-data-report_2026-07-23.json
+  waveglider-raw-data-report_2026-07-24.json
+  waveglider-raw-data-report_2026-07-25.json
+  waveglider-raw-data-report_2026-07-26.json
+  waveglider-raw-data-report_2026-07-27.json
+  waveglider-raw-data-report_2026-07-28.json
+  waveglider-raw-data-report_2026-07-29.json
+  waveglider-raw-data-report_2026-07-30.json
+  waveglider-raw-data-report_2026-07-31.json
+  waveglider-raw-data-report_2026-08-01.json
+  waveglider-raw-data-report_2026-08-02.json
+  waveglider-raw-data-report_2026-08-03.json
+  waveglider-raw-data-report_2026-08-04.json
+  waveglider-raw-data-report_2026-08-05.json
+  waveglider-raw-data-report_2026-08-06.json
+  waveglider-raw-data-report_2026-08-07.json
+  waveglider-raw-data-report_2026-08-08.json
+  waveglider-raw-data-report_2026-08-09.json
+  waveglider-raw-data-report_2026-08-10.json
+  waveglider-raw-data-report_2026-08-11.json
+  waveglider-raw-data-report_2026-08-12.json
+  waveglider-raw-data-report_2026-08-13.json
+  waveglider-raw-data-report_2026-08-14.json
+  waveglider-raw-data-report_2026-08-15.json
+  waveglider-raw-data-report_2026-06-30.json: 34 records
+  waveglider-raw-data-report_2026-07-01.json: 85 records
+  waveglider-raw-data-report_2026-07-02.json: 143 records
+  waveglider-raw-data-report_2026-07-03.json: 145 records
+  waveglider-raw-data-report_2026-07-04.json: 144 records
+  waveglider-raw-data-report_2026-07-05.json: 143 records
+  waveglider-raw-data-report_2026-07-06.json: 146 records
+  waveglider-raw-data-report_2026-07-07.json: 142 records
+  waveglider-raw-data-report_2026-07-08.json: 143 records
+  waveglider-raw-data-report_2026-07-09.json: 85 records
+  waveglider-raw-data-report_2026-07-10.json: 90 records
+  waveglider-raw-data-report_2026-07-11.json: 144 records
+  waveglider-raw-data-report_2026-07-12.json: 144 records
+  waveglider-raw-data-report_2026-07-13.json: 144 records
+  waveglider-raw-data-report_2026-07-14.json: 146 records
+  waveglider-raw-data-report_2026-07-15.json: 143 records
+  waveglider-raw-data-report_2026-07-16.json: 145 records
+  waveglider-raw-data-report_2026-07-17.json: 45 records
+  waveglider-raw-data-report_2026-07-18.json: 4 records
+  waveglider-raw-data-report_2026-07-19.json: 41 records
+  waveglider-raw-data-report_2026-07-20.json: 1 records
+  waveglider-raw-data-report_2026-07-21.json: 0 records
+  waveglider-raw-data-report_2026-07-22.json: 0 records
+  waveglider-raw-data-report_2026-07-23.json: 78 records
+  waveglider-raw-data-report_2026-07-24.json: 17 records
+  waveglider-raw-data-report_2026-07-25.json: 35 records
+  waveglider-raw-data-report_2026-07-26.json: 9 records
+  waveglider-raw-data-report_2026-07-27.json: 42 records
+  waveglider-raw-data-report_2026-07-28.json: 118 records
+  waveglider-raw-data-report_2026-07-29.json: 144 records
+  waveglider-raw-data-report_2026-07-30.json: 149 records
+  waveglider-raw-data-report_2026-07-31.json: 144 records
+  waveglider-raw-data-report_2026-08-01.json: 145 records
+  waveglider-raw-data-report_2026-08-02.json: 144 records
+  waveglider-raw-data-report_2026-08-03.json: 142 records
+  waveglider-raw-data-report_2026-08-04.json: 33 records
+  waveglider-raw-data-report_2026-08-05.json: 8 records
+  waveglider-raw-data-report_2026-08-06.json: 98 records
+  waveglider-raw-data-report_2026-08-07.json: 70 records
+  waveglider-raw-data-report_2026-08-08.json: 10 records
+  waveglider-raw-data-report_2026-08-09.json: 0 records
+  waveglider-raw-data-report_2026-08-10.json: 6 records
+  waveglider-raw-data-report_2026-08-11.json: 1 records
+  waveglider-raw-data-report_2026-08-12.json: 7 records
+  waveglider-raw-data-report_2026-08-13.json: 45 records
+  waveglider-raw-data-report_2026-08-14.json: 38 records
+  waveglider-raw-data-report_2026-08-15.json: 12 records
+
+Wrote 3752 records -> /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/AirSeaWHIRLS.csv
+
+2026-08-15 09:58:44,517 [INFO] Completed: extract_airsea_wg1169.py for WG1169
+2026-08-15 09:58:44,517 [INFO] Starting: extract_airsea_wg1170.py for WG1170
+2026-08-15 09:58:44,517 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/extract_airsea_wg1170.py /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/AirSeaWHIRLS.csv
+2026-08-15 09:58:44,991 [INFO] Output:
+Found 44 file(s):
+  waveglider-raw-data-report_2026-07-03.json
+  waveglider-raw-data-report_2026-07-04.json
+  waveglider-raw-data-report_2026-07-05.json
+  waveglider-raw-data-report_2026-07-06.json
+  waveglider-raw-data-report_2026-07-07.json
+  waveglider-raw-data-report_2026-07-08.json
+  waveglider-raw-data-report_2026-07-09.json
+  waveglider-raw-data-report_2026-07-10.json
+  waveglider-raw-data-report_2026-07-11.json
+  waveglider-raw-data-report_2026-07-12.json
+  waveglider-raw-data-report_2026-07-13.json
+  waveglider-raw-data-report_2026-07-14.json
+  waveglider-raw-data-report_2026-07-15.json
+  waveglider-raw-data-report_2026-07-16.json
+  waveglider-raw-data-report_2026-07-17.json
+  waveglider-raw-data-report_2026-07-18.json
+  waveglider-raw-data-report_2026-07-19.json
+  waveglider-raw-data-report_2026-07-20.json
+  waveglider-raw-data-report_2026-07-21.json
+  waveglider-raw-data-report_2026-07-22.json
+  waveglider-raw-data-report_2026-07-23.json
+  waveglider-raw-data-report_2026-07-24.json
+  waveglider-raw-data-report_2026-07-25.json
+  waveglider-raw-data-report_2026-07-26.json
+  waveglider-raw-data-report_2026-07-27.json
+  waveglider-raw-data-report_2026-07-28.json
+  waveglider-raw-data-report_2026-07-29.json
+  waveglider-raw-data-report_2026-07-30.json
+  waveglider-raw-data-report_2026-07-31.json
+  waveglider-raw-data-report_2026-08-01.json
+  waveglider-raw-data-report_2026-08-02.json
+  waveglider-raw-data-report_2026-08-03.json
+  waveglider-raw-data-report_2026-08-04.json
+  waveglider-raw-data-report_2026-08-05.json
+  waveglider-raw-data-report_2026-08-06.json
+  waveglider-raw-data-report_2026-08-07.json
+  waveglider-raw-data-report_2026-08-08.json
+  waveglider-raw-data-report_2026-08-09.json
+  waveglider-raw-data-report_2026-08-10.json
+  waveglider-raw-data-report_2026-08-11.json
+  waveglider-raw-data-report_2026-08-12.json
+  waveglider-raw-data-report_2026-08-13.json
+  waveglider-raw-data-report_2026-08-14.json
+  waveglider-raw-data-report_2026-08-15.json
+  waveglider-raw-data-report_2026-07-03.json: 61 records
+  waveglider-raw-data-report_2026-07-04.json: 45 records
+  waveglider-raw-data-report_2026-07-05.json: 0 records
+  waveglider-raw-data-report_2026-07-06.json: 0 records
+  waveglider-raw-data-report_2026-07-07.json: 0 records
+  waveglider-raw-data-report_2026-07-08.json: 7 records
+  waveglider-raw-data-report_2026-07-09.json: 75 records
+  waveglider-raw-data-report_2026-07-10.json: 63 records
+  waveglider-raw-data-report_2026-07-11.json: 19 records
+  waveglider-raw-data-report_2026-07-12.json: 91 records
+  waveglider-raw-data-report_2026-07-13.json: 145 records
+  waveglider-raw-data-report_2026-07-14.json: 98 records
+  waveglider-raw-data-report_2026-07-15.json: 160 records
+  waveglider-raw-data-report_2026-07-16.json: 137 records
+  waveglider-raw-data-report_2026-07-17.json: 124 records
+  waveglider-raw-data-report_2026-07-18.json: 112 records
+  waveglider-raw-data-report_2026-07-19.json: 149 records
+  waveglider-raw-data-report_2026-07-20.json: 64 records
+  waveglider-raw-data-report_2026-07-21.json: 60 records
+  waveglider-raw-data-report_2026-07-22.json: 43 records
+  waveglider-raw-data-report_2026-07-23.json: 111 records
+  waveglider-raw-data-report_2026-07-24.json: 62 records
+  waveglider-raw-data-report_2026-07-25.json: 66 records
+  waveglider-raw-data-report_2026-07-26.json: 46 records
+  waveglider-raw-data-report_2026-07-27.json: 37 records
+  waveglider-raw-data-report_2026-07-28.json: 0 records
+  waveglider-raw-data-report_2026-07-29.json: 0 records
+  waveglider-raw-data-report_2026-07-30.json: 0 records
+  waveglider-raw-data-report_2026-07-31.json: 0 records
+  waveglider-raw-data-report_2026-08-01.json: 0 records
+  waveglider-raw-data-report_2026-08-02.json: 0 records
+  waveglider-raw-data-report_2026-08-03.json: 0 records
+  waveglider-raw-data-report_2026-08-04.json: 0 records
+  waveglider-raw-data-report_2026-08-05.json: 0 records
+  waveglider-raw-data-report_2026-08-06.json: 0 records
+  waveglider-raw-data-report_2026-08-07.json: 0 records
+  waveglider-raw-data-report_2026-08-08.json: 0 records
+  waveglider-raw-data-report_2026-08-09.json: 0 records
+  waveglider-raw-data-report_2026-08-10.json: 0 records
+  waveglider-raw-data-report_2026-08-11.json: 0 records
+  waveglider-raw-data-report_2026-08-12.json: 0 records
+  waveglider-raw-data-report_2026-08-13.json: 0 records
+  waveglider-raw-data-report_2026-08-14.json: 0 records
+  waveglider-raw-data-report_2026-08-15.json: 0 records
+
+Wrote 1775 records -> /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/AirSeaWHIRLS.csv
+
+2026-08-15 09:58:44,991 [INFO] Completed: extract_airsea_wg1170.py for WG1170
+2026-08-15 09:58:44,991 [INFO] Starting: extract_vegas.py for WG1170
+2026-08-15 09:58:44,991 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/extract_vegas.py /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/VeGAS_decoded.csv
+2026-08-15 09:58:45,120 [INFO] Output:
+Found 44 file(s):
+  waveglider-raw-data-report_2026-07-03.json: 34 VeGAS records
+  waveglider-raw-data-report_2026-07-04.json: 24 VeGAS records
+  waveglider-raw-data-report_2026-07-05.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-06.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-07.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-08.json: 12 VeGAS records
+  waveglider-raw-data-report_2026-07-09.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-10.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-11.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-12.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-13.json: 16 VeGAS records
+  waveglider-raw-data-report_2026-07-14.json: 9 VeGAS records
+  waveglider-raw-data-report_2026-07-15.json: 11 VeGAS records
+  waveglider-raw-data-report_2026-07-16.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-17.json: 8 VeGAS records
+  waveglider-raw-data-report_2026-07-18.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-19.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-20.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-21.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-22.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-23.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-24.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-25.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-26.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-27.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-28.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-29.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-30.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-07-31.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-01.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-02.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-03.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-04.json: 3 VeGAS records
+  waveglider-raw-data-report_2026-08-05.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-06.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-07.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-08.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-09.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-10.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-11.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-12.json: 0 VeGAS records
+  waveglider-raw-data-report_2026-08-13.json: 48 VeGAS records
+  waveglider-raw-data-report_2026-08-14.json: 12 VeGAS records
+  waveglider-raw-data-report_2026-08-15.json: 4 VeGAS records
+
+Wrote 181 records -> /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/VeGAS_decoded.csv
+
+2026-08-15 09:58:45,120 [INFO] Completed: extract_vegas.py for WG1170
+2026-08-15 09:58:45,120 [INFO] Starting: decodeAirSea_wg1169.py for WG1169
+2026-08-15 09:58:45,120 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/decodeAirSea_wg1169.py /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/AirSeaWHIRLS.csv /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/AirSeaWHIRLS_Decoded.csv
+2026-08-15 09:58:45,303 [INFO] Output:
+File cleaned and decoded successfully: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1169/json/AirSeaWHIRLS_Decoded.csv
+
+2026-08-15 09:58:45,303 [INFO] Completed: decodeAirSea_wg1169.py for WG1169
+2026-08-15 09:58:45,303 [INFO] Starting: decodeAirSea_wg1170.py for WG1170
+2026-08-15 09:58:45,303 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-data-service/decodeAirSea_wg1170.py /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/AirSeaWHIRLS.csv /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/AirSeaWHIRLS_Decoded.csv
+2026-08-15 09:58:45,395 [INFO] Output:
+File cleaned and decoded successfully: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/data/wg1170/json/AirSeaWHIRLS_Decoded.csv
+
+2026-08-15 09:58:45,395 [INFO] Completed: decodeAirSea_wg1170.py for WG1170
+2026-08-15 09:58:45,396 [INFO] Starting: export_wg1169_csv.py
+2026-08-15 09:58:45,396 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/export_wg1169_csv.py
+2026-08-15 09:58:51,688 [INFO] Output:
+Wrote 3,752 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/airsea.csv
+Wrote 1,266 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/waves.csv
+Wrote 2,342 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/weather.csv
+
+2026-08-15 09:58:51,688 [INFO] Completed: export_wg1169_csv.py
+2026-08-15 09:58:51,689 [INFO] Starting: export_wg1170_csv.py
+2026-08-15 09:58:51,689 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/export_wg1170_csv.py
+2026-08-15 09:58:53,040 [INFO] Output:
+Wrote 1,775 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/airsea.csv
+Wrote 181 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/vegas.csv
+Wrote 98 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/waves.csv
+Wrote 1,539 rows to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/weather.csv
+
+2026-08-15 09:58:53,040 [INFO] Completed: export_wg1170_csv.py
+2026-08-15 09:58:53,040 [INFO] Starting: extract_amps_ports_full_wg1169.py
+2026-08-15 09:58:53,040 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/extract_amps_ports_full_wg1169.py
+2026-08-15 09:58:55,224 [INFO] Output:
+Found 47 output-power-status files
+Found 47 solar files
+Found 47 summary AMPS files
+Total rows: 33401
+          timestamp          sampleHour  domain  slot  port                                 sensor  avg_power_W  avg_voltage_V  avg_current_A  port_status
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     1                           Airmar WS200         1.02          13.43           0.07            1
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     2                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     3                               lightBar         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     4                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     5                 airmarWaterspeedDevice         0.66          13.43           0.05            1
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     4     6                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     1                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     2                                   pCO2         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     3                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     4                                    AIS         1.38          13.52           0.10            1
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     5                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1     7     6                                   None         0.00           0.00           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    13     1                                   None         0.04          19.26           0.00            1
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32     1                           CCU: UNKNOWN         0.36          19.26           0.01        32769
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32     2                                   None         0.21          19.25           0.01        32769
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32     3                                    VMC         4.82          19.27           0.25        32769
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32   106              CCU: Tegra TX1 SOM module         1.88          18.76           0.10            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32   107                                   None         0.03           5.03           0.00            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32   108 CCU: mSATA Drive, SDCARD, discrete ICs         0.13           3.29           0.03            0
+2026-06-30 09:44:13 2026-06-30 09:00:00       1    32   110   CCU: UARTs, HS/LS USB Hubs, Ethernet         1.30           3.40           0.39            0
+
+Saved full Domain/Slot/Port power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/all_ports_domain_slot_port_power.csv
+Saved total output power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/total_output_power_watts.csv
+Saved solar power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/solar_power_watts.csv
+Saved total battery power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1169/total_battery_power_watts.csv
+
+2026-08-15 09:58:55,224 [INFO] Completed: extract_amps_ports_full_wg1169.py
+2026-08-15 09:58:55,224 [INFO] Starting: extract_amps_ports_full_wg1170.py
+2026-08-15 09:58:55,224 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/extract_amps_ports_full_wg1170.py
+2026-08-15 09:58:57,469 [INFO] Output:
+Found 44 output-power-status files
+Found 44 solar files
+Found 44 summary AMPS files
+Total rows: 35302
+          timestamp          sampleHour  domain  slot  port                                 sensor  avg_power_W  avg_voltage_V  avg_current_A  port_status
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     1                           Airmar WS200         1.02          13.51           0.07            1
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     2                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     3                               lightBar         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     4                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     5                 airmarWaterspeedDevice         1.82          13.53           0.13            1
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     4     6                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     1                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     2                                   pCO2         9.88          13.50           0.73            1
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     3                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     4                                    AIS         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     5                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1     7     6                                   None         0.00           0.00           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    13     1                                   None         0.04          17.97           0.00            1
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32     1                           CCU: UNKNOWN         0.36          17.97           0.02        32769
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32     2                                   None         0.18          17.96           0.01        32769
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32     3                                    VMC         4.90          17.97           0.27        32769
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32   106              CCU: Tegra TX1 SOM module         1.83          17.44           0.11            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32   107                                   None         0.00           5.05           0.00            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32   108 CCU: mSATA Drive, SDCARD, discrete ICs         0.10           3.28           0.03            0
+2026-07-03 09:32:36 2026-07-03 09:00:00       1    32   110   CCU: UARTs, HS/LS USB Hubs, Ethernet         1.25           3.40           0.37            0
+
+Saved full Domain/Slot/Port power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/all_ports_domain_slot_port_power.csv
+Saved total output power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/total_output_power_watts.csv
+Saved solar power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/solar_power_watts.csv
+Saved total battery power table to /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/amps_power_output/wg1170/total_battery_power_watts.csv
+
+2026-08-15 09:58:57,470 [INFO] Completed: extract_amps_ports_full_wg1170.py
+2026-08-15 09:58:57,470 [INFO] Starting: power_analysis.py
+2026-08-15 09:58:57,470 [INFO] Command: /opt/anaconda3/bin/python3 /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/power_analysis.py
+2026-08-15 09:59:02,426 [INFO] Output:
+Loading and processing data...
+
+Processing WG1169 - Vetkoek...
+Saved: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg1169_power_interactive.html
+Saved: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg1169_power_interactive_embed.html
+
+Processing WG1170 - Melktert...
+Saved: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg1170_power_interactive.html
+Saved: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg1170_power_interactive_embed.html
+
+Building combined dashboard...
+Saved: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg_power_dashboard.html
+Combined dashboard generation complete.
+Export directory: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports
+
+2026-08-15 09:59:02,426 [INFO] Completed: power_analysis.py
+2026-08-15 09:59:02,426 [INFO] Starting: Deploy dashboard to remote server
+2026-08-15 09:59:02,426 [INFO] Command: rsync /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports/wg_power_dashboard.html databot:/home/databot/share/www/html/
+2026-08-15 09:59:03,236 [INFO] Completed: Deploy dashboard to remote server
+2026-08-15 09:59:03,236 [INFO] ================================================================================
+2026-08-15 09:59:03,236 [INFO] PIPELINE COMPLETE - All steps successful!
+2026-08-15 09:59:03,236 [INFO] Exports saved to: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/exports
+2026-08-15 09:59:03,236 [INFO] Log file: /Users/xduplm/Google Drive/My Drive/projects/2026-whirls/platforms/wavegliders/waveglider-power-dashboard/logs/pipeline_20260815_095755.log
+2026-08-15 09:59:03,236 [INFO] ================================================================================

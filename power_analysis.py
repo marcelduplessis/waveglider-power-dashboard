@@ -342,6 +342,15 @@ def main():
             row=3,
             col=1,
         )
+        fig.add_vrect(
+            x0=default_day,
+            x1=default_day + pd.Timedelta(days=1),
+            fillcolor='#6C757D',
+            opacity=0.18,
+            line_width=0,
+            row=4,
+            col=1,
+        )
 
         slider_steps = []
         day_labels = [pd.Timestamp(day).strftime('%Y-%m-%d') for day in available_days]
@@ -367,6 +376,8 @@ def main():
                             'annotations[1].text': meta['battery_subplot_title'],
                             'shapes[0].x0': meta['day_start'],
                             'shapes[0].x1': meta['day_end'],
+                            'shapes[1].x0': meta['day_start'],
+                            'shapes[1].x1': meta['day_end'],
                         },
                     ],
                 )
